@@ -1,0 +1,34 @@
+# Global settings for all applications.
+[GLOBAL]
+LVCONFIG=/etc/lumenvox
+
+EMAIL_SERVER=
+EMAIL_SERVER_USERNAME=
+EMAIL_SERVER_PASSWORD=
+EMAIL_SENDER=
+EMAIL_RECIPIENTS=
+
+# Speech recognition engine server settings
+[SRE]
+CACHEDIR=/var/lumenvox/grammar_cache
+LANGDIR=/etc/lumenvox/Lang
+LOGSDIR=/var/log/lumenvox/sre
+
+# Speech recognition client settings
+[CLIENT]
+LANGDIR=/etc/lumenvox/Lang
+LOGSDIR=/var/log/lumenvox/client
+RESPONSEDIR=/var/lumenvox/responses
+
+# License server settings
+[LICENSE]
+LOGSDIR=/var/log/lumenvox/license
+
+# MediaServer settings
+[MSVR]
+LVMSVRLOGS=/var/log/lumenvox/mediaserver
+
+# TTS Server settings
+[TTSSERVER]
+LANGDIR=/etc/lumenvox/Lang
+LOGSDIR=/var/log/lumenvox/ttsserver
