@@ -1,0 +1,6 @@
+include_recipe "lumenvox::core"
+include_recipe "lumenvox::client"
+include_recipe "lumenvox::sre"
+include_recipe "lumenvox::license_server"
+include_recipe "lumenvox::media_server"
+include_recipe "lumenvox::tts"
