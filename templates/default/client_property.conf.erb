@@ -281,19 +281,19 @@ TTS_SERVERS = <%= @tts_servers.join(';') %>
 #* Description: Default language for synthesis
 #* Default Value: en-US
 #******************************************************************************#
-SYNTHESIS_LANGUAGE = default
+SYNTHESIS_LANGUAGE = <%= @default_tts_langage %>
 
 #******************************************************************************#
 #* Description: The gender of the voice timbre of the audio produced
 #* Default Value: neutral
 #******************************************************************************#
-SYNTH_VOICE_GENDER = default
+SYNTH_VOICE_GENDER = <%= @default_tts_gender %>
 
 #******************************************************************************#
 #* Description: The processor-specific voice name of the audio produced
 #* Default Value:
 #******************************************************************************#
-SYNTH_VOICE_NAME = default
+SYNTH_VOICE_NAME = <%= @default_tts_voice %>
 
 #******************************************************************************#
 #* Description: Format in which the synthesized audio is expected.
