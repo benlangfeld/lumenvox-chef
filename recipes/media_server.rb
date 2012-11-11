@@ -9,6 +9,7 @@ template "/etc/lumenvox/media_server.conf" do
     :sre_ip => node['lumenvox']['media_server']['sre_ip'],
     :sip_port => node['lumenvox']['media_server']['sip_port']
   )
+  notifies :restart, "service[lvmediaserverd]"
 end
 
 service "lvmediaserverd" do

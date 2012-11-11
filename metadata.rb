@@ -2,7 +2,7 @@ maintainer        "Mojo Lingo LLC"
 maintainer_email  "ops@mojolingo.com"
 license           "Apache 2.0"
 long_description  IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version           "0.1"
+version           "0.2.0"
 recipe            "lumenvox", "Installs all Lumenvox components."
 recipe            "lumenvox::core", "Installs core files shared across all packages. This is required."
 recipe            "lumenvox::client", "Installs the Lumenvox speech client."
