@@ -9,7 +9,7 @@ end
 template "/etc/lumenvox/sre_server.conf" do
   source "sre_server.conf.erb"
   variables(
-    :logging_verbosity => node['lumenvox']['sre_server']['logging_verbosity']
+    :logging_verbosity => node['lumenvox']['sre']['logging_verbosity']
   )
   notifies :restart, "service[lvsred]"
 end
