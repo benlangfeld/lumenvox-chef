@@ -1,6 +1,8 @@
 include_recipe "lumenvox::core"
 
-package "LumenVoxClient"
+yum_package "LumenVoxClient" do
+  version node['lumenvox']['client']['version']
+end
 
 template "/etc/lumenvox/client_property.conf" do
   source "client_property.conf.erb"
