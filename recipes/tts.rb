@@ -10,7 +10,6 @@ node['lumenvox']['tts']['voices'].each do |item|
   end
 end
 
-
 service "lvttsd" do
   action :start
 end
