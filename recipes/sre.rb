@@ -1,9 +1,13 @@
 include_recipe "lumenvox::core"
 
-package "LumenVoxSRE"
+yum_package "LumenVoxSRE" do
+  version node['lumenvox']['sre']['version']
+end
 
-node['lumenvox']['sre']['language_packs'].each do |language|
-  package "LumenVox-#{language}SREModel"
+node['lumenvox']['sre']['language_packs'].each do |pack|
+  yum_package "LumenVox-#{pack[:language]}SREModel" do
+    version pack[:version]
+  end
 end
 
 template "/etc/lumenvox/sre_server.conf" do

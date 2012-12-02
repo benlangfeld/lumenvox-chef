@@ -2,8 +2,7 @@ package 'zip'
 
 include_recipe "yum::repoforge"
 
-package 'js'
-package 'js-devel'
+%w(libxml2 libxml2-devel uuid uuid-devel libxslt libxslt-devel libstdc++ js js-devel).each{|lib| package lib}
 
 yum_repository "LumenVox" do
   name "LumenVox"
@@ -12,4 +11,6 @@ yum_repository "LumenVox" do
   action :add
 end
 
-package 'LumenVoxCore'
+yum_package 'LumenVoxCore' do
+  version node[:lumenvox][:core][:version]
+end
