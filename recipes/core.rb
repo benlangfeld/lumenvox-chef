@@ -12,5 +12,5 @@ yum_repository "LumenVox" do
 end
 
 yum_package 'LumenVoxCore' do
-  version node[:lumenvox][:core][:version]
+  version node['lumenvox']['core']['version']
 end
