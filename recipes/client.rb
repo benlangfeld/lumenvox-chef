@@ -12,7 +12,7 @@ template "/etc/lumenvox/client_property.conf" do
     :tts_servers              => node['lumenvox']['client']['tts_servers'],
     :authentication_username  => node['lumenvox']['client']['authentication_username'] || ENV['LUMENVOX_USERNAME'],
     :authentication_password  => node['lumenvox']['client']['authentication_password'] || ENV['LUMENVOX_PASSWORD'],
-    :default_tts_langage      => node['lumenvox']['client']['default_tts_langage'],
+    :default_tts_language     => node['lumenvox']['client']['default_tts_language'],
     :default_tts_gender       => node['lumenvox']['client']['default_tts_gender'],
     :default_tts_voice        => node['lumenvox']['client']['default_tts_voice']
   )
