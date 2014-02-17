@@ -14,6 +14,7 @@ recipe "lumenvox::media_server", "Installs the Lumenvox media server which conta
 recipe "lumenvox::tts", "Installs the text-to-speech server, required for a TTS installation."
 
 depends "yum"
+depends "yum-repoforge"
 
 %w{ redhat centos }.each do |os|
   supports os, ">= 6.0"

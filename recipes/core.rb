@@ -1,6 +1,6 @@
 package 'zip'
 
-include_recipe "yum::repoforge"
+include_recipe "yum-repoforge"
 
 %w(libxml2 libxml2-devel uuid uuid-devel libxslt libxslt-devel libstdc++ js js-devel).each{|lib| package lib}
 
