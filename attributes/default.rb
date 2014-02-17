@@ -1,1 +1,1 @@
-default['lumenvox']['core']['version'] = '10.5.300-1.el6'
+default['lumenvox']['core']['version'] = nil

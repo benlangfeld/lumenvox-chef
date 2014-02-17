@@ -4,7 +4,7 @@ default['lumenvox']['client']['tts_servers']          = ['127.0.0.1:7579']
 default['lumenvox']['client']['default_tts_language'] = 'default'
 default['lumenvox']['client']['default_tts_gender']   = 'default'
 default['lumenvox']['client']['default_tts_voice']    = 'default'
-default['lumenvox']['client']['version']              = '10.5.300-1.el6'
+default['lumenvox']['client']['version']              = nil
 
 default['lumenvox']['client']['authentication_username'] =  nil
 default['lumenvox']['client']['authentication_password'] =  nil
