@@ -34,32 +34,11 @@ Chef cookbook for Lumenvox media engine
 * `node['lumenvox']['media_server']['sip_port']` - Sets the port on which the server will listen for incoming SIP messages. 0 = Disabled. Defaults to `default`.
 * `node['lumenvox']['sre']['version']` - LumenVox SRE version to install. Defaults to ``.
 * `node['lumenvox']['sre']['logging_verbosity']` - Controls the verbosity of event logging. This can be used to increase or decrease the amount of log events that are generated. Note that increasing logging verbosity uses more CPU, and should therefore be avoided wherever possible in production systems where optimal performance is critical. Available options: `1`, `2`, `3`. Defaults to `1`.
-* `node['lumenvox']['sre']['language_packs']` - LumenVox SRE language packs to install.  Array of hashes providing :name and (optionally) :version. Defaults to `[
-  { :language => "MexicanSpanish",    :version => nil},
-  { :language => "ColombianSpanish",  :version => nil},
-  { :language => "CanadianFrench",    :version => nil},
-  { :language => "BritishEnglish",    :version => nil},
-  { :language => "AustralianEnglish", :version => nil}
-]`.
+* `node['lumenvox']['sre']['language_packs']` - LumenVox SRE language packs to install.  Array of hashes providing :name and (optionally) :version. Defaults to `[]`.
 * `node['lumenvox']['tts']['version']` - LumenVox TTS version to install. Defaults to ``.
 * `node['lumenvox']['tts']['voices']` - LumenVox TTS voices to install. Array of hashes providing :name and (optionally) :version. Defaults to `[
   {:voice => "Jason",   :version => nil},
-  {:voice => "Rebecca", :version => nil},
-  {:voice => "Rita",    :version => nil},
-  {:voice => "Sophie",  :version => nil},
-  {:voice => "Chris",   :version => nil},
-  {:voice => "Lindsey", :version => nil},
-  {:voice => "Ben",     :version => nil},
-  {:voice => "Chloe",   :version => nil},
-  {:voice => "Lukas",   :version => nil},
-  {:voice => "Heidi",   :version => nil},
-  {:voice => "Jean",    :version => nil},
-  {:voice => "Margot",  :version => nil},
-  {:voice => "Antonio", :version => nil},
-  {:voice => "Martina", :version => nil},
-  {:voice => "Luis",    :version => nil},
-  {:voice => "Lorena",  :version => nil},
-  {:voice => "Molly",   :version => nil}
+  {:voice => "Rebecca", :version => nil}
 ]`.
 
 # Recipes
