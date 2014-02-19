@@ -1,4 +1,6 @@
 # develop
+
+# 0.1.0
   * Major clean up. Too much to document
 
 # 0.0.2
