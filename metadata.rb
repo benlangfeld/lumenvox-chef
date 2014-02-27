@@ -4,7 +4,7 @@ maintainer_email  "ops@mojolingo.com"
 license           "Apache 2.0"
 description       "Chef cookbook for Lumenvox media engine"
 long_description  IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version           "0.1.0"
+version           "0.1.1"
 
 depends "yum"
 depends "yum-repoforge"
@@ -209,6 +209,6 @@ attribute 'lumenvox/tts/voices',
  required: "optional",
  recipes: ['lumenvox::tts'],
  default: '[
-  {:voice => "Jason",   :version => nil},
-  {:voice => "Rebecca", :version => nil}
+  {:voice => "Chris",   :version => nil},
+  {:voice => "Lindsey", :version => nil}
 ]'

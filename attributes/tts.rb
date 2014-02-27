@@ -1,5 +1,5 @@
 default['lumenvox']['tts']['version'] = nil
 default['lumenvox']['tts']['voices']  = [
-  {:voice => "Jason",   :version => nil},
-  {:voice => "Rebecca", :version => nil}
+  {:voice => "Chris",   :version => nil},
+  {:voice => "Lindsey", :version => nil}
 ]
