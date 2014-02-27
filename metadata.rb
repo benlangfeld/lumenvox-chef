@@ -209,6 +209,6 @@ attribute 'lumenvox/tts/voices',
  required: "optional",
  recipes: ['lumenvox::tts'],
  default: '[
-  {:voice => "Jason",   :version => nil},
-  {:voice => "Rebecca", :version => nil}
+  {:voice => "Chris",   :version => nil},
+  {:voice => "Lindsey", :version => nil}
 ]'
